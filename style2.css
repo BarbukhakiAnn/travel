@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background: #532280;
+    display: flex; 
+    width: 100%;
+    position: fixed;
+    max-width: 1280px;
+    top:0;
+    z-index: 20;
+    
+}
+header img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 15px 5px 5px; 
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px; 
+    font-weight: bold;
+}
+header > nav {
+    display: flex;
+    align-items: center;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+div.wrapper {
+    width: 1280px;
+    margin: 0 auto; 
+}
+main {
+    width: 100%;
+    margin-top: 43px; 
+}
+/* 
+div.img > div.buttom  {
+    position: absolute;
+    text-align: center; 
+    top: 45%;
+    left: 40%;
+    color: white;
+}
+div.img > div.buttom >span {
+    background: #532280;
+    padding: 10px 20px;
+    border-left: 4px solid orange;
+}
+div.img > div.buttom >span:hover{
+    cursor: pointer;
+}*/
+div.img {
+    position: relative;
+}
+    /* /* z-index: -1; 
+ }  */
+div.img > div.social {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+div.img > div.social > a > img {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+} 
+div.img > div.buttom >span {
+    background: #532280;
+    padding: 10px 20px;
+    /* border-left: 4px solid orange; */
+    font-size: 1.5rem;
+    position: relative;
+}
+div.img > div.buttom >span:before {
+    content: ' ';
+    left: -4px;
+    top:0;
+    height: 100%;
+    width: 4px;
+    background: orange; 
+    position: absolute;
+
+}
+/* .svg:nth-child(3) { -третий ребенок 
+    background: indianred; 
+
+} */
+
+div.scroll {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    
+}
+div.scroll img {
+    width: 60px;
+}
+
+div.img > div.buttom >span:hover{
+    cursor: pointer;
+}
+
+div.img >div.buttom {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top:0;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+}
+main img {
+    width: 100%;
+    height: auto; 
+}
+h1 {
+    background: #532280;
+    text-align: center;
+    margin: -4px 0 0 0 ; 
+    color: white;
+    font-weight: 100;
+    padding: 10px;
+}
+main article {
+    border: 1px solid #532280; 
+    padding: 4rem 3rem;
+    line-height: 1.5;
+}
+
+footer {
+     background: #532280;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.div-footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    line-height: 2; 
+}
+.a-footer {
+    color: white;
+    text-decoration: none;
+
+}
+.a-footer:hover {
+    text-decoration: underline;
+}
+footer .right {
+    text-align: right;
+}
+footer h2 {
+    margin: 0; 
+    color: yellow;
+    font-weight: 100;
+}
+footer address {
+    color: yellow;
+    font-style: normal;
+}
+footer span {
+    color: white;
+}
+footer >* {
+    margin-bottom: 15px;
+}
+footer span a {
+    color: white;
+    text-decoration: none;
+}
+.social a img {
+    width: 50px;
+}
+
+main > h2 {
+    background: #532280;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 2px solid #532280;
+    /* font-size: 1.3rem; */
+}
+form > .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+form > .inputs> input {
+    border: 1px solid orange;
+    margin-bottom: 10px; 
+    padding: 8px;
+    min-width: 200px;
+    font-size: 1.3rem;
+    
+}
+form >.submit {
+    display: flex;
+    flex-direction: column;
+}
+form>.submit>textarea {
+    height: 67%;
+    min-width: 200px;
+    border: 1px solid orange;
+    font-size: 1.3rem;
+
+}
+form>.submit>button {
+    margin-top: 10px;
+    background-color: #532280;
+    color:white;
+    border-left: 4px solid orange;
+}
+.popup {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+.popup>.popup_body {
+    background-color: white;
+    border-radius: 5px;
+}
+.popup>.popup_body>form {
+    border-radius: 5px;
+}
+.popup_body > .cross>img {
+    width: 30px;
+
+}
+.popup_body > .cross {
+    margin-left: 93%;
+}
+.popup_body > .cross:hover {
+    cursor: pointer;
+}
+
+
+
+
+.otzyv {
+    display: flex;
+    width: 1230px;
+    padding: 24px; 
+    border: 1px solid #532280;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin: 0;
+    /*padding: 4rem 3rem;*/ 
+}
+.otzyv-item {
+    width:50%;
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex; 
+}
+.otzyv-item img {
+    width: 200px;
+    height: 100px;
+    margin-right: 10px;
+}
+.name {
+    font-weight: 700;
+    color: blue;
+
+}
+.fire {
+    display: flex;
+    
+    width: 1230px;
+    padding: 24px; 
+    border: 1px solid #532280;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+/* .fire-item {
+    width: 33%;
+} */
+.fire-item img {
+    width: 200px; 
+    height: 130px;
+}
+.fire-item span {
+    text-decoration: line-through;
+}
+.catalog-line {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.catalog-item {
+     border: 2px solid #532280;
+     padding: 30px;
+     text-align: center;
+     width: 30%;
+
+}
+
+.catalog-item img {
+    margin: 0 auto;
+    width: 55%;
+}
+hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    background-color: #FFC107; /* Цвет линии для браузера Firefox и Opera */
+    height: 4px; /* Толщина линии */
+    color: #FFC107;
+    width: 30%;
+}
+.catalog h3 {
+    color: #532280;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.question {
+    border: 2px solid #532280;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    color: #532280;
+}
+.question>button {
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid orange;
+    color: white;
+    background: #532280;
+    cursor: pointer;
+
+}
+.popup2_wrapper {
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    justify-content: center;
+    position: fixed;
+    z-index: 99999;
+    
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.popup2>button>img {
+    width: 30px;
+}
+.popup2>button {
+    background: white;
+    margin:0;
+    padding: 0;
+    margin-left: 610px;
+}
+.popup2 {
+    width: 600px;
+    min-height: 200px;
+
+}
+.popup2>form{
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+.login-inf>input {
+    width: 200px;
+    font-size: 20px;
+    border: 2px solid orange;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+.mess>textarea {
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    border: 2px solid orange;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+
+}
+.mess>button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid orange;
+    color: white;
+    background: #532280;
+}
+.animation {
+    color: #532280;
+    border: 2px solid #532280;
+    padding: 20px;
+}
+.ques {
+    background: #532280;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+.re {
+    border: 2px solid #532280;
+    padding: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.cook {
+    background: rgba(83, 34, 128, .9);
+    width: 100%;    
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 22;
+   
+
+}
+.cook .cook-wrapper {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+.cook>.cook-wrapper>img{
+    width: 100px;
+}
+.cook>button>img {
+    width: 20px;
+    /* position: absolute;
+    right: 0; */
+}
+.cook>button {
+    
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.cook>.cook-wrapper>button {
+    padding:10px 30px;
+    font-size: 20px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    background-color: orange;
+    color: white;
+    border: 3px solid white;
+    cursor: pointer;
+
+}
+
